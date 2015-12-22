@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<title>Data Kader | KM-ITB </title>
+		<link href="css/association.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/half-slider.css" rel="stylesheet">	
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="jquery.js"></script>
+</head>
+<body>
+
+	<!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="title">				
+					<a class="navbar-brand" href="#">Welcome to Data Kader page!</a>
+				</div>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              </div>
+            <!-- /.navbar-collapse -->
+        </div>
+       
+	<!-- /.container -->
+    </nav>
+	 <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+				<div class="menu-bar">
+					<div class= "logo">
+						<img id="logo-img" src="assets/logo.gif"></img>
+					</div>
+					<div class= "menu">
+							<ul class="nav nav-pills">
+								<li><a href="http://localhost/home/index.php">Home</a></li>
+									<li><a href="http://localhost/event/event-depan.php?action=get_all">Event</a></li>
+									<li><a href="http://localhost/komunitas/od.html">Open Data</a></li>
+									<li><a href="http://localhost/mahasiswa/datakader.html">Kader</a></li>
+									
+									<!-- authentication service -->
+									<li><a href="/authentication/logout.php?logout=true">Logout</a></li>
+							</ul>
+					</div>
+				</div>
+            </div>
+        </div>
+	</div>
+	
+	<div class="container">
+	<div class="satu">
+		<div class="satu-txt">
+			<legend><p><b>Data Kader</b></p></legend>
+			<fieldset>
+
+						
+								<span class="icon fa-laptop"></span>
+								<h2>Download <strong>data kadermu!</strong> 
+								<br />
+								Yuk yuk!</h2>
+									<br />
+										<br />
+								<!--<p>Turns out <strong>Twenty</strong> was the best I could come up with. Anyway, lame name aside,
+								<br />
+								it's minimally designed, fully responsive, built on HTML5/CSS3/<strong>skel</strong>,
+								and, like all my stuff,
+								<br />
+								released for free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0</a> license. Have fun!</p>-->
+
+									<form action="export/rest-api.php">
+				  Masukkan <strong>nomor urutmu</strong>:<br>
+				 <center> <input type="text" name="NIM" value="182*****"></center>
+				   <br>
+				  <input type="hidden" name="action" value="get_info">
+				  <br>
+				  Pilih <strong>format file</strong> 
+								yang ingin di download:
+									  <br>
+				  <input type="radio" name="format" value="png" checked> PNG
+					<br>
+					<input type="radio" name="format" value="xls"> XLS
+				  <br>
+				  <input type="radio" name="format" value="csv"> CSV
+					<br>
+					<input type="radio" name="format" value="txt"> TXT
+				  <br>
+					<br>
+					  <br>
+				  <input type="submit" value="Download">
+				 
+				</form>
+						
+			</fieldset>
+			
+			<div class="grey">
+				<div class="tambahevent">
+					<div class="button-form"> <a class="white" href="http://localhost/mahasiswa/dproject/kader/kader.php">Edit Data Kader</a></div>
+				</div>
+				</div>
+			
+			<div class="grey">
+				<div class="tambahevent">
+					<div class="button-form"> <a class="white" href="datakader-client.php">Tambah Data Kader</a></div>
+				</div>
+				</div>
+		</div>
+	</div>
+	
+	<div class="satu">
+		<div class="satu-txt">
+			<legend><p><b>Data Kader</b></p></legend>
+			<fieldset>
+
+				<div class="row1">
+					<div class="col-md-2 himp1">
+						<a href = "Himpunan.php?himp=gea">
+							<img id ="img-himp" src = "assets/img-gea.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp2">
+						<a href = "Himpunan.php?himp=hmt">
+							<img id="img-himp" src = "assets/img-hmt.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp3">
+						<a href = "Himpunan.php?himp=patra">
+							<img id="img-himp" src = "assets/img-patra.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp4">
+						<a href = "Himpunan.php?himp=immg">
+							<img id="img-himp" src = "assets/img-immg.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp5">
+						<a href = "Himpunan.php?himp=terra">
+							<img id="img-himp" src = "assets/img-terra.png">
+						</a>
+					</div>
+				</div>
+				
+				<div class="row2">
+					<div class="col-md-2 himp1">
+						<a href = "Himpunan.php?himp=img">
+							<img id="img-himp" src = "assets/img-img.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp2">
+						<a href = "Himpunan.php?himp=hmme">
+							<img id="img-himp" src = "assets/img-hmmo.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp3">
+						<a href = "Himpunan.php?himp=hms">
+							<img id="img-himp" src = "assets/img-hms.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp4">
+						<a href = "Himpunan.php?himp=kmkl">
+							<img id="img-himp" src = "assets/img-kmkl.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp5">
+						<a href = "Himpunan.php?himp=mti">
+							<img id="img-himp" src = "assets/img-hmtl.png">
+						</a>
+					</div>
+
+				</div>
+				
+				<div class="row1">
+					<div class="col-md-2 himp1">
+						<a href = "Himpunan.php?himp=hmif">
+							<img id="img-himp" src = "assets/img-hmif.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp2">
+						<a href = "Himpunan.php?himp=hmm">
+							<img id="img-himp" src = "assets/img-hmm.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp3">
+						<a href = "Himpunan.php?himp=kmpn">
+							<img id="img-himp" src = "assets/img-kmpn.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp4">
+						<a href = "Himpunan.php?himp=hmrh">
+							<img id="img-himp" src = "assets/img-hmrh.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp5">
+						<a href = "Himpunan.php?himp=nymphaea">
+							<img id="img-himp" src = "assets/img-nymphaea.png">
+						</a>
+					</div>
+				</div>
+				
+				<div class="row1">
+					<div class="col-md-2 himp1">
+						<a href = "Himpunan.php?himp=hmft">
+							<img id="img-himp" src = "assets/img-hmft.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp2">
+						<a href = "Himpunan.php?himp=himatek">
+							<img id="img-himp" src = "assets/img-himatek.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp3">
+						<a href = "Himpunan.php?himp=hmp">
+							<img id="img-himp" src = "assets/img-hmp.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp4">
+						<a href = "Himpunan.php?himp=imag">
+							<img id="img-himp" src = "assets/img-imag.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp5">
+						<a href = "Himpunan.php?himp=kmsbm">
+							<img id="img-himp" src = "assets/img-kmsbm.png">
+						</a>
+					</div>
+				</div>
+				
+				<div class="row1">
+					<div class="col-md-4 himp1">
+						<a href = "Himpunan.php?himp=himastron">
+							<img id="img-himp" src = "assets/img-himastron.png">
+						</a>
+					</div>
+					<div class="col-md-4 himp2">
+						<a href = "Himpunan.php?himp=amisca">
+							<img id="img-himp" src = "assets/img-amisca.png">
+						</a>
+					</div>
+					<div class="col-md-4 himp3">
+						<a href = "Himpunan.php?himp=hmf">
+							<img id="img-himp" src = "assets/img-hmf.png">
+						</a>
+					</div>
+					<div class="col-md-2 himp6">
+						<a href = "Himpunan.php?himp=hmo">
+							<img id="img-himp" src = "assets/img-hmo.png">
+						</a>
+					</div>
+					
+					<div class="col-md-2 himp6">
+						<a href = "Himpunan.php?himp=hme">
+							<img id="img-himp" src = "assets/img-hme.png">
+						</a>
+					</div>
+				</div>
+				
+				<div class="row1">
+					<div class="col-md-2 himp6">
+						<a href = "Himpunan.php?himp=mti">
+							<img id="img-himp" src = "assets/img-mti.png">
+						</a>
+					</div>
+					
+					<div class="col-md-2 himp6">
+						<a href = "Himpunan.php?himp=himafi">
+							<img id="img-himp" src = "assets/img-himafi.png">
+						</a>
+					</div>
+				</div>
+				
+				
+				
+			</fieldset>
+			
+			
+
+		</div>
+	</div>
+	
+	</div>
+	
+	<!-- Page Content -->
+    <div class="container">
+	<div class="center">
+		<div class="social-media">
+			<a href='https://www.facebook.com/ITB.KM'><img id="icon-fb" src="assets/home/icon-fb.png"></img></a>
+			<a href='http://mail.google.com'><img id="icon-mail" src="assets/home/icon-mail.png"></img></a>
+			<a href='https://www.instagram.com/km_itb/'><img id="icon-ig" src="assets/home/icon-ig.png"></img></a>	
+		</div>
+	</div>
+	</div>
+	
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="copyright">
+						<p>Sistem dan Teknologi Informasi 2013</p>
+					</div>
+            </div>
+            <!-- /.row -->
+        </footer>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+</center>
+</body>
+</html>
+
